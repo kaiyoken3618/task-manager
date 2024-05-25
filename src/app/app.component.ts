@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
+  selector: 'app-root',  
+  standalone:true,
+  imports:[RouterModule ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
